@@ -1,11 +1,9 @@
-TypeScript Node Catch All Unhandled Error From Promise Demo
-===========================================================
-
-通过捕获`unhandledRejection`事件来捕获来自promise的未处理的error和rejection.
+TypeScript Node Uncaught Exception Demo
+=======================================
 
 注意：
-1. `throw new Error`和`reject()`效果一样
-2. `setTimeout`中throw error不能被捕获
+1. 对于普通未捕获的error，使用`uncaughtException`来捕获：
+2. Promise中的error需要使用`unhandledRejection`
 
 ```
 npm install
